@@ -1,0 +1,5 @@
+podanyTekst = input("Wprowadź dowolny tekst: ")
+print(f"Podany przez Ciebie tekst to: {podanyTekst}")
+print("Tekst zawiera", len(podanyTekst), "znaków.")
+print("Pierwsza litera w podanym tekście to", podanyTekst[0], "natomiast ostatnia to", podanyTekst[-1])
+print(podanyTekst[1:4])

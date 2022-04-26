@@ -4,7 +4,7 @@ dolnyPrzedzial = int(input("Podaj dolny przedział: "))
 gornyPrzedzial = int(input("Podaj górny przedział: "))
 # losowanie liczby z podanego przedziału
 losowaLiczba = random.randint(dolnyPrzedzial, gornyPrzedzial)
-# przypisanie jako startowej liczby punktów wylosowanej liczby
+# przypisanie jako startowej liczby punktów wylosowanej liczby1
 liczbaPunktow = losowaLiczba
 # pierwsza próba zgadnięcia liczby
 podajLiczbe = int(input("Podaj liczbę: "))

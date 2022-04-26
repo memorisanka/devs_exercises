@@ -24,3 +24,10 @@ print()
 tree = ["   *   ", "  ***  ", " ***** ", "*******"]
 for i in tree:
     print(i)
+
+h = 10
+r = 1
+for i in range(1, h + 1):
+    print(h * " " + "*" * r)
+    h -= 1
+    r += 2

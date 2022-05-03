@@ -1,12 +1,13 @@
 albums = {'The Sensual World': 'Kate Bush', 'Shaday': 'Ofra Haza',
           'Achtung Baby': 'U2', 'Aion': 'Dead Can Dance', 'Invisible Touch': 'Genesis'}
-
-for album in albums.keys():
+#wyświetla wszystkie albumy
+for album in albums:
     print(album)
-
-search = input("Podaj nazwę albumu, którego wykonawcę chcesz poznać: ")
-if search.title() in albums.keys():
-    print(f"""Autorem albumu "{search.title()}" jest {albums[search.title()]}. """)
+#pobiera od użytkownika nazwę albumu
+search = input("Podaj nazwę albumu, którego wykonawcę chcesz poznać: ").title()
+#szuka, czy w słowniku jest podany autor i zwraca, kto jest jego autorem
+if search in albums:
+    print(f"""Autorem albumu "{search}" jest {albums.get(search)}. """)
 else:
     print("Brak danych.")
 

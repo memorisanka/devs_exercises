@@ -10,10 +10,14 @@ for number in range(0, n+1):
         B.add(number)
 
 # zamiana na tuple a frozenset?
-C = tuple(A | B)
-D = tuple(A & B)
-E = tuple(A - B)
-F = tuple(A ^ B)
+C = set(A.union(B))
+D = set(A.intersection(B))
+E = set(A.difference(B))
+F = set(A.symmetric_difference(B))
+# C = tuple(A | B)
+# D = tuple(A & B)
+# E = tuple(A - B)
+# F = tuple(A ^ B)
 
 for i in C:
     B.add(i)

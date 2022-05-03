@@ -13,6 +13,11 @@ print(f"{name[0]}.{last_name[0]}")
 # print(f"{name_i[0][0].upper()}.{name_i[1][0].upper()}")
 
 
-
+txt = "Good night Sam!"
+a = "mSa"
+b = "eJo"
+c = "odnght"
+mytable = txt.maketrans(a, b, c)
+print(txt.translate(mytable))
 
 

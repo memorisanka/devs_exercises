@@ -1,0 +1,4 @@
+Odpowiedź do zadania 10.1:
+
+Jasność najciemniejszego piksela to: 7
+Jasność najjaśniejszego piksela to: 221

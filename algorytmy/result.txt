@@ -1,0 +1,10 @@
+Dla listy o długości 1000 elementów:
+Bubble sort: 0s, 141584ms.
+Insertion sort: 0s, 0ms.
+Quick sort: 0s, 0ms.
+
+Dla listy o długości 10000 elementów:
+Bubble sort: 16s, 768571ms.
+Insertion sort: 0s, 2993ms.
+Quick sort: 0s, 996ms.
+

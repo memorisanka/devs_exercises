@@ -7,7 +7,7 @@ class Shape:
 
     @abstractmethod
     def area(self) -> None:
-        pass
+        raise NotImplementedError
 
 
 class Square(Shape):
@@ -17,6 +17,8 @@ class Square(Shape):
     def area(self) -> str:
         area = self.lenght**2
         return f"Pole prostokąta jest równe: {area} j2."
+
+
 
 
 def main():

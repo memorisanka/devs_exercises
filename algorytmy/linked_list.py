@@ -1,6 +1,18 @@
 from dataclasses import dataclass
 from typing import Any
 
+# 1. Linked List
+# a) Czy lista jest pusta
+# b) rozmiar listy
+# c) Pobranie elementu z listy
+# d) Dodanie elementu do listy na poczatku, na koncu
+# e) Usuwanie elementu z listy
+
+
+# 2. Stos Implementacja stosu
+
+# 3. Implementacja Kolejki
+
 
 array = []
 
@@ -93,6 +105,73 @@ class LinkedList:
         self.head = self.head.next
         return erased_node.value
 
+    def __str__(self) -> str:
+        output = ''
+        curr = self.head
+
+        while curr:
+            if curr == self.tail:
+                output += str(curr.value)
+            else:
+                output += str(curr.value) + ' -> '
+            curr = curr.next
+        return output
+
+
+@dataclass
+class Stack:
+    _storage: LinkedList = LinkedList()
+
+    def push(self, value: Any) -> None:
+        self._storage.push(value)
+
+    def pop(self) -> Any:
+        return self._storage.pop()
+
+    def __len__(self) -> int:
+        return len(self._storage)
+
+    def __str__(self) -> str:
+        output = ''
+        curr = self._storage.head
+        while curr:
+            output += str(curr.value) + '\n'
+            curr = curr.next
+
+        return output
+
+
+@dataclass
+class Queue:
+    _storage: LinkedList = LinkedList()
+
+    class Queue:
+        _storage: LinkedList
+
+        def enqueue(self, element: Any) -> None:
+            self._storage.append(element)
+
+        def dequeue(self) -> Any:
+            return self._storage.pop()
+
+        def peek(self) -> Any:
+            return self._storage.head.value
+
+        def __str__(self) -> str:
+            output = ''
+            curr = self._storage.head
+            while curr:
+                if curr is self._storage.tail:
+                    output += str(curr.value)
+                else:
+                    output += str(curr.value) + ', '
+
+                curr = curr.next
+
+            return output
+
+        def __len__(self) -> int:
+            return len(self._storage)
 
 def main():
     linked_list = LinkedList()
@@ -104,15 +183,14 @@ def main():
     linked_list.push_back(17)
     print(linked_list.__len__())
     linked_list.is_empty()
-    #linked_list.pop()
     linked_list.push(27)
     linked_list.push(34)
     linked_list.push(35)
     linked_list.push_back(56)
     print(linked_list.__len__())
-    x = 1
-    print(id(x))
+    stack1 = Stack()
+    queue1 = Queue()
+
 
 if __name__ == "__main__":
     main()
-

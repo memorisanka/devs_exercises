@@ -1,11 +1,12 @@
 import random
 
+# tutorial z yt
 
 tab = [random.randint(1, 500) for num in range(30)]
 print(tab)
 
 
-def divide(tab: list, start, end):
+def divide(tab: list, start: int, end: int) -> int:
     pivot = tab[end]
     low = start
     high = end - 1
@@ -26,7 +27,7 @@ def divide(tab: list, start, end):
     return low
 
 
-def quicksort(tab: list, start=0, end=None):
+def quicksort(tab: list, start=0, end=None) -> None:
     if end is None:
         end = len(tab) - 1
     if start < end:

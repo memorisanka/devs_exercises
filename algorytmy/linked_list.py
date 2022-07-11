@@ -190,6 +190,9 @@ def main():
     print(linked_list.__len__())
     stack1 = Stack()
     queue1 = Queue()
+    stack1.push(5)
+    stack1.push(6)
+
 
 
 if __name__ == "__main__":

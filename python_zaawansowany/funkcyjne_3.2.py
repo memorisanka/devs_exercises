@@ -1,5 +1,7 @@
 to_sort = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
 
-to_sort.sort(key = lambda x: x[0])
+def sort(l: list):
+    l.sort(key = lambda x: x[0])
+    return l
 
-print(to_sort)
+print(sort(to_sort))

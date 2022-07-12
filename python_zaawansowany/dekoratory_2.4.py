@@ -13,7 +13,7 @@ def time_this(func):
 
 
 @time_this
-def fun1(l1: list):
+def fun1(l1: list) -> None:
     sort_l = sorted(l1)
 
 

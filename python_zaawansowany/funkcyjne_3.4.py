@@ -5,5 +5,5 @@ def counter(lst: list):
     count = list(filter(lambda x: x.count("11"), lst))
     return f"Wynik: {set(lst) - set(count)}"
 
-
+# PyQT6
 print(counter(lines))

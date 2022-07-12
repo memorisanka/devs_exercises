@@ -1,5 +1,8 @@
+from typing import Any, Callable
+
+
 def arg_check(arg):
-    def check(func):
+    def check(func: Callable):
         def inner(*args):
             func(*args)
             print(f"Typ argumentu funkcji dekorującej to: {type(arg)}")
@@ -12,7 +15,8 @@ def arg_check(arg):
 
 
 @arg_check(arg=5.0)
-def example(arg2):
+def example(arg2: Any) -> None:
     print(f"Typ argumentu funkcji example to: {type(arg2)}")
+
 
 example("jakiś string")

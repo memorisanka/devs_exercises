@@ -1,8 +1,8 @@
 def add_stars(func):
     def inner(*args):
-        print(20 * "*")
+        print(30 * "*")
         func(*args)
-        print(20 * "*")
+        print(30 * "*")
 
     return inner
 
@@ -11,4 +11,4 @@ def print_something(txt):
     print(txt)
 
 
-print_something("Jakiś tekst")
+print_something("Szedł Grześ przez wieś.")

@@ -1,7 +1,6 @@
 from functionality.src import *
 import pytest
 
-
 def create_test_todos():
     laundry = "Make laundry"
     bed = "Make bed"
@@ -10,15 +9,14 @@ def create_test_todos():
     add_todo(dinner)
     add_todo(bed)
 
-
-def test_if_check_pos_throws_No_such_item_number_exception():
+def test_if_check_pos_throws_no_such_item_number_exception():
     with pytest.raises(Exception) as ex1:
         create_test_todos()
         check_pos(20)
     assert "No such item number!" in str(ex1.value)
 
 
-def test_if_check_pos_throws_No_more_todos_exception():
+def test_if_check_pos_throws_no_more_todos_exception():
     with pytest.raises(Exception) as ex2:
         remove_all()
         check_pos(1)
@@ -32,6 +30,15 @@ def test_check_if_adds_todo():
 
     assert expected == todo
 
+
+# @classmethod
+# def setup_class(cls):
+#     print('\n===Setup Class===')
+#
+#
+# @classmethod
+# def teardown_class(cls):
+#     print('\n===Teardown Class===')
 
 def test_check_if_removes_todo():
     # todos jest puste

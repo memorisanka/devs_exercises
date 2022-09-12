@@ -12,3 +12,4 @@ Cipher Mini projekt w oparciu o wzorzec projektowy Fasady + *Factory , ktÃ³ry bÄ
 4. Wypisywanie zaszyfrowanych slow z pamieci tzw. buffer show_buffer (zwykla lista)
 5. Exit, Calkowite Menu itd. 
 6. *Logowanie -> Godzina data szyfrowanie odszyfrowania itd. -> Zapisywanie do pliku i nadpisywane caly czas.
+
